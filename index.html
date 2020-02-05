@@ -7,40 +7,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Galería</title>
     <!--Recursos-->
+    <!--Main css-->
+    <link rel="stylesheet" href="Recursos/main.css">
+    <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></head>
 <body>
-    <div class="Container">
-        <form>
-        <table>
-            <tr>
-                <td>
-                    <label for="Nombre">Nombre:</label>
-                </td>
-                <td>
-                    <input type="text" name="Nombre" id="Nombre" autofocus="autofocus"/>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="contraseña">Contraseña dada:</label>
-                </td>
-                <td>
-                    <input type="password" name="contraseña" id="contraseña"/>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="email">Correo electronico:</label>
-                </td>
-                <td>
-                    <input type="email" name="email" id="email" />
-                </td>
-            </tr>
-        </table>
-    </form>
+    <div class="container">
+        <img src="Usuarios/Alejandro/bg.jpg" alt="bk" style="position: absolute; top: 0px;left: 0px;height: 100%;width: 100%;">
+        <div class="ia-container">
+            <figure>
+                <img src="Usuarios/Alejandro/1.jpg" alt="image01" />
+                <input type="radio" name="radio-set" checked="checked" />
+                <figcaption><span>True Colors</span></figcaption>
+                <figure>
+                    <img src="Usuarios/Alejandro/2.jpg" alt="image02" />
+                    <input type="radio" name="radio-set" />
+                    <figcaption><span>Honest Light</span></figcaption>
+                    <figure>
+                        <img src="Usuarios/Alejandro/3.jpg" alt="image02" />
+                        <input type="radio" name="radio-set" />
+                        <figcaption><span>Honest Light</span></figcaption>
+                        <figure>
+                            <img src="Usuarios/Alejandro/4.jpg" alt="image02" />
+                            <input type="radio" name="radio-set" />
+                            <figcaption><span>Honest Light</span></figcaption>
+                            <figure>
+                                <img src="Usuarios/Alejandro/5.jpg" alt="image02" />
+                                <input type="radio" name="radio-set" />
+                                <figcaption><span>Honest Light</span></figcaption>
+                                <figure>
+                                    <img src="Usuarios/Alejandro/6.jpg" alt="image02" />
+                                    <input type="radio" name="radio-set" />
+                                    <figcaption><span>Honest Light</span></figcaption>
+                                    <figure>
+                                        <img src="Usuarios/Alejandro/7.jpg" alt="image02" />
+                                        <input type="radio" name="radio-set" />
+                                        <figcaption><span>Honest Light</span></figcaption>
+                                        <figure>
+                                            <img src="Usuarios/Alejandro/8.jpg" alt="image02" />
+                                            <input type="radio" name="radio-set" />
+                                            <figcaption><span>Honest Light</span></figcaption>
+                                        </figure>
+                                    </figure>
+                                </figure>	
+                             </figure>	
+                        </figure>
+                    </figure>
+                </figure>
+            </figure>
+        </div>
+        <form class="login" action="login.php" method="post" onsubmit="valida(this)">
+            <div class="form-group">
+              <label for="Nombre">Email o nombre</label>
+              <input type="text" class="form-control" id="Nombre">
+            </div>
+            <div class="form-group">
+              <label for="password">contraseña</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="recordar">
+              <label class="form-check-label" for="recordar">Recordar usuario</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
     </div>
 </body>
 </html>
