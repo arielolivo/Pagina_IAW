@@ -11,6 +11,17 @@ _El proyecto se basa en hacer algo como instagram tratando de aplicar lo aprendi
 
 _De momento Todo_
 
+Antes de logeo 
+
+https://tympanus.net/codrops/2012/06/06/image-accordion-with-css3/
+
+Despues de logeo
+
+https://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/
+
+CSS
+
+https://www.mockplus.com/blog/post/css-animation-examples
 
 ## Construido con 🛠️
 
