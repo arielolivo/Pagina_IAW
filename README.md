@@ -23,6 +23,10 @@ CSS
 
 https://www.mockplus.com/blog/post/css-animation-examples
 
+En el logeo opciones
+
+https://www.templatemonster.com/es/blog/gratis/100-formularios-html5-css3-gratis-de-registro-ininio-de-sesion/
+
 ## Construido con 🛠️
 
 * _Visual Studio Code_
