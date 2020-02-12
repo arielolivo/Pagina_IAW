@@ -1,0 +1,341 @@
+/* CREADO POR TUNTORIALES BUSCANOS EN YOUTUBE TUTORIAL COMPLETO */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(220, 220, 220);	
+  font-family: 'Segoe UI';
+}
+
+#wrapper {
+  width: 70%;
+  height: 80%;
+  overflow: hidden;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.w-left {
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+
+.w-right {
+  width: 50%;
+  float: right;
+}
+
+.main-content {
+  width: 300px;
+  margin: 10px auto;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 40px 50px;
+  border-radius: 50%;
+}
+
+.header {
+  border: 0px solid #000;
+  margin: 10px;
+}
+
+.header img {
+  height: 50px;
+  width: 175px;
+  margin: auto;
+  position: relative;
+  left: 40px;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.overlap-text {
+  position: relative;
+}
+
+.overlap-text a {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  color: #003569;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 400;
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  background-color: #3897f0;
+  border: 1px solid #3897f0;
+  padding: 5px 12px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn:focus {
+    background-color: #C4E0FB;
+}
+
+.sub-content {
+  width: 250px;
+  margin: 10px auto;
+  border: 1px solid #e6e6e6;
+  padding: 35px 50px;
+  background-color: #fff;
+}
+
+.s-part {
+  text-align: center;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 400;
+  color: #333;
+}
+
+.s-part a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #3897f0;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 400;
+}
+
+.myButton {
+  background-color:#3e3ed6;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:15px 41px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2768b8;
+  border: 0px;
+}
+.myButton:hover {
+  background-color:#1e32b8;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+.button_white {
+  background-color: white;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  display:inline-block;
+  cursor:pointer;
+  color:#262626;
+  font-size:16px;
+  padding:6px 9px;
+  text-decoration:none;
+  border: 1px solid #DBDBDB;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 600;
+  line-height: 18px;
+}
+.button_white:active {
+  position:relative;
+  top:1px;
+}
+
+.button_blue {
+  background-color: #3897F0;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  display:inline-block;
+  cursor:pointer;
+  color:white;
+  font-size:16px;
+  padding:6px 9px;
+  text-decoration:none;
+  border: 0px solid #DBDBDB;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 600;
+  line-height: 18px;
+}
+.button_blue:active {
+  position:relative;
+  top:1px;
+}
+
+.button_edit_on {
+  background-color: white;
+  display:inline-block;
+  cursor:pointer;
+  color:#262626;
+  font-size:18px;
+  padding:20px 30px;
+  text-decoration:none;
+  border-left: 2px solid black;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 600;
+  line-height: 20px;
+}
+.button_edit {
+  background-color: white;
+  display:inline-block;
+  cursor:pointer;
+  color:#262626;
+  font-size:18px;
+  padding:20px 30px;
+  text-decoration:none;
+  border-left: 0px solid #999;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 400;
+  line-height: 20px;
+}
+.button_edit:hover {
+  background-color: white;
+  display:inline-block;
+  cursor:pointer;
+  color:#262626;
+  font-size:18px;
+  padding:20px 28px;
+  text-decoration:none;
+  border-left: 2px solid #999;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* HOME */
+
+.h-header {width: 100%; height: 79px; border-bottom: 1px solid #E6E6E6; position: relative; background-color: #FFF;}
+  .h-logo {position: absolute; top: 30%; left: 10%; height: 70%; width: 20%; text-align: center;}
+  .h-search {position: absolute; top: 30%; left: 35%; height: 90%; width: 30%; text-align: center;}
+  .h-account {position: absolute; top: 30%; left: 70%; height: 90%; width: 20%;}
+  .h-account a:link {text-decoration: none;}
+    .i-icon {padding: 0px 15px;}
+
+.h-content {width: 65%; margin: auto; margin-top: 70px;}
+  .h-left {width: 65%; float: left; margin-right: 5%;}
+    .hl-cont {width: 100%; margin-bottom: 60px; float: left; border: 1px solid #E6E6E6;}
+    .hl-top {width: 100%; height: 60px;}
+      .hl-profile {width: 10%; height: 60px; float: left; position: relative;}
+        .hl-pic {width: 100%; position: absolute; top: 12%; left: 10%;}
+      .hl-username {width: 90%; height: 60px; float: left; position: relative;}
+        .hl-name {width: 100%; height: 30px; float: left; color: #262626; position: absolute; top: 10%; font-weight: 600;}
+        .hl-name a:link{text-decoration: none; color: #262626; font-weight: 600;}
+        .hl-name a:visited{text-decoration: none; color: #262626; font-weight: 600;}
+        .hl-location {width: 100%; height: 30px; float: left; font-family: 'Segoe UI'; font-weight: 400; color: #262626; position: absolute; top: 50%; font-size: 12px;}
+      .hl-menu {width: 100%; margin-bottom: 60px; text-align: center;}
+        .hl-icon {width: 33.3%; float: left;}
+    .hl-middle {width: 100%;}
+    .hl-bottom {width: 100%; height: 30px; padding: 10px;}
+    .hl-section-likes {width: 100%; height: 44px;}
+    .hl-section-likes img {padding: 10px;}
+
+  .h-right {width: 30%; float: right;}      
+    .hr-top {width: 100%; height: 100px;}
+      .hr-profile {width: 30%; height: 100px; float: left; position: relative;}
+        .hr-pic {width: 100%; position: absolute; top: 12%; left: 10%;}
+      .hr-username {width: 70%; height: 100px; float: left; position: relative;}
+        .hr-name {width: 100%; height: 50px; float: left; color: #262626; position: absolute; top: 10%; font-weight: 600;}
+        .hr-name a:link{text-decoration: none; color: #262626; font-weight: 600;}
+        .hr-name a:visited{text-decoration: none; color: #262626; font-weight: 600;}
+        .hr-nombre {width: 100%; height: 50px; float: left; font-family: 'Segoe UI'; font-weight: 400; color: #999999; position: absolute; top: 35%; font-size: 12px;}
+    
+
+
+
+  /* SEARCH FORM */
+
+  .search {padding: 6px 40px; border-radius: 4px 4px 4px 4px; -moz-border-radius: 4px 4px 4px 4px; -webkit-border-radius: 4px 4px 4px 4px;
+border: 1px solid #DBDBDB; }
+
+
+/* TOP BAR CONFIRM */
+
+.topbarc {width: 100%; height: 30px; background-color: #66CCCC; text-align: center; padding-top: 10px;}
+
+ .topbarc a:link, a:visited{color: black; text-decoration: none;}
+ .topbarc a:hover{color: black; text-decoration: underline;}
+
+
+/* CAMBIAR INPUT POR IMAGEN */
+
+.image-upload > input {display: none;}
+.image-upload img {cursor: pointer;}
+
+
+/* CAMBIAR RADIO POR IMAGEN */
+
+.imgcheck{
+    position:relative;
+    display: inline-block;
+}
+  .imgcheck label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+.imgcheck label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+.imgcheck label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
+
+
+/* PERFIL */
+
+.p-top {width: 90%; height: 210px; margin: auto; clear: both;}
+  .p-foto {width: 30%; height: 210px; float: left;}
+    .p-foto img {margin-top: 20px; margin-left: 20px;}
+  .p-name {width: 70%; height: 60px; float: left;}
+    .p-user {margin-right: 4%; height: 60px; float: left; font-size: 32px; line-height: 32px; font-weight: 200;}
+    .p-editar {margin-right: 4%; height: 60px; float: left;}
+    .p-config {margin-right: 4%; height: 60px; float: left;}
+  .p-info {width: 70%; height: 40px; float: left;}
+    .p-infor {width: 33.3%; height: 40px; float: left; font-size: 18px; font-weight: 400; line-height: 18px; color: #262626;}
+  .p-nombre {width: 70%; height: 30px; float: left; font-size: 18px; font-weight: 600; line-height: 18px; color: #262626;}
+  .p-location {width: 70%; height: 30px; float: left; font-size: 18px; font-weight: 400; line-height: 18px; color: #262626;}
+  .p-description {width: 70%; height: 50px; float: left; font-size: 16px; font-weight: 400; line-height: 18px; color: #262626;}
+
+.p-mid {width: 100%; height: 210px; margin: auto; clear: both; padding-top: 10px;}
+  .p-pub {width: 300px; height: 300px; float: left; background-position: 20% 50%; background-repeat: no-repeat;
+   margin: 10px;}
+
+
+/* EDITAR PERFIL */
+
+.e-mid {width: 100%; height: 210px; margin: auto; clear: both; padding-top: 10px;}
+	.e-left {width: 29%; float: left; border-left: 1px solid #DBDBDB; border-top: 1px solid #DBDBDB; 
+		border-bottom: 1px solid #DBDBDB;}
+	.e-right {width: 70%; float: left; border: 1px solid #DBDBDB;}
+		.e-contenido {width: 80%; margin: auto; clear: both; padding: 30px;}
+			.e-title {width: 20%; float: left; font-weight: 600; color:#262626; font-size: 18px;}
+			.e-input {width: 80%; float: left; font-weight: 400; color:black; font-size: 22px; line-height: 22px}
+			.e-input p {width: 300px; padding: 5px; font-weight: bold; color:#3897F0; font-size: 14px;}
+			.e-input input {width: 300px; border: 1px solid #DBDBDB; padding: 5px; font-weight: 400; color:#262626; font-size: 17px;}
+			.e-input select {width: 150px; border: 1px solid #DBDBDB; padding: 5px; font-weight: 400; color:#262626; font-size: 17px;}
+			.e-but input {border: 1px solid #DBDBDB; padding: 5px; font-weight: 400; color:#262626; font-size: 17px;}
