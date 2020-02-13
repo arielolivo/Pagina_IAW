@@ -73,6 +73,12 @@ body {
     left: 0px;
 }
 
+.Search span {
+    margin: 0.5%;
+    padding: 5px;
+    float: right;
+}
+
 /*Div imagenes*/
 .Galeria {
     align-items: center;
@@ -90,6 +96,7 @@ body {
     position: relative;
     text-align: center;
 }
+
 /*Slider*/
 .Imagen .mask {
     width: 100%;
@@ -111,8 +118,9 @@ body {
 .Imagen img {
     display: block;
     position: relative;
-    transition: all 0.3s ease-in-out; 
-    min-height: 150px;
+    transition: all 0.4s ease-in-out; 
+    min-height: 260px;
+    max-height: 260px;
     min-width: 300px;
 }
 
@@ -140,9 +148,10 @@ body {
     padding: 10px 20px 20px;
     text-align: center;
     opacity: 0;
-    max-height: 100px;
+    max-height: 28%;
     color: #333;
     transition: all 0.2s linear;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 .Imagen:hover p{
@@ -158,8 +167,8 @@ body {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-
 }
+
 .Imagen a:hover {
     box-shadow: 0 0 5px rgb(0, 0, 0);
 }
