@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="Recursos/galeria.css">
 </head>
 <body>
+    <?php
+session_start();
+$_SESSION["Nombre"]="Administrador";
+if(array_key_exists('Nombre', $_SESSION) && $_SESSION["Nombre"] == "Administrador")  {
+    header('Location:administracion.php');
+};
+?>
     <div class="Contenedor">
         <!--Barra superior-->
         <div class="Search">
@@ -21,7 +28,19 @@
                     </form>
                 </li>
                 <li>
-                    <button>Administración</button>
+                    <button>Cerrar sesión</button>
+                </li>
+                <li>
+                    <!--Aqui irá el usuario si esta logeado-->
+                    <span>
+                        <?php
+                            if(array_key_exists('Nombre', $_SESSION))  {
+                                echo $_SESSION["Nombre"];
+                            } else {
+                                echo '<a href="index.php">Registrarse</a>';
+                            };
+                        ?>
+                    </span>
                 </li>
             </ul>
         </div>
@@ -48,10 +67,10 @@
     //Si el autor esta en la busqeda lo selecciona
     if (!isset($autor)) {
         // registro sin autor buscado
-        $registro=mysqli_query($connect, "SELECT c.NOMBRE_IMAGEN,c.PIE_DE_FOTO,u.NOMBRE_USUARIO FROM USUARIOS u INNER JOIN CONTRIBUCIONES c ON u.ID_USUARIO = c.ID_AUTOR") or die("Error.".mysqli_error($connect));
+        $registro=mysqli_query($connect, "SELECT c.NOMBRE_IMAGEN,c.PIE_DE_FOTO,u.NOMBRE_USUARIO FROM USUARIOS u INNER JOIN CONTRIBUCIONES c ON u.ID_USUARIO = c.ID_AUTOR ORDER BY Fecha_de_subida") or die("Error.".mysqli_error($connect));
     } else {
         // registro con autor buscado
-        $registro=mysqli_query($connect, "SELECT c.NOMBRE_IMAGEN,c.PIE_DE_FOTO,u.NOMBRE_USUARIO FROM USUARIOS u INNER JOIN CONTRIBUCIONES c ON u.ID_USUARIO = c.ID_AUTOR WHERE u.NOMBRE_USUARIO LIKE '$autor'") or die("Error.".mysqli_error($connect));
+        $registro=mysqli_query($connect, "SELECT c.NOMBRE_IMAGEN,c.PIE_DE_FOTO,u.NOMBRE_USUARIO FROM USUARIOS u INNER JOIN CONTRIBUCIONES c ON u.ID_USUARIO = c.ID_AUTOR WHERE u.NOMBRE_USUARIO LIKE '$autor' ORDER BY Fecha_de_subida") or die("Error.".mysqli_error($connect));
     }
 
     // presentación de la imagen, esta debe estar en el directorio
