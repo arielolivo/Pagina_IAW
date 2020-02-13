@@ -9,23 +9,8 @@ _El proyecto se basa en hacer algo como instagram tratando de aplicar lo aprendi
 
 ## Lo que nos falta por hacer ⚙️
 
-_De momento Todo_
-
-Antes de logeo 
-
-https://tympanus.net/codrops/2012/06/06/image-accordion-with-css3/
-
-Despues de logeo
-
-https://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/
-
-CSS
-
-https://www.mockplus.com/blog/post/css-animation-examples
-
-En el logeo opciones
-
-https://www.templatemonster.com/es/blog/gratis/100-formularios-html5-css3-gratis-de-registro-ininio-de-sesion/
+_Página de administración_
+_Vincular las páginas_
 
 ## Construido con 🛠️
 
