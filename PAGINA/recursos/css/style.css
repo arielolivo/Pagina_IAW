@@ -93,7 +93,7 @@
 	padding: 20px;
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-} 
+}
 
 .ia-container input:checked + figcaption,
 .ia-container input:checked:hover + figcaption{
@@ -106,11 +106,11 @@
     -o-transition: all 0.4s ease-in-out 0.5s;
     -ms-transition: all 0.4s ease-in-out 0.5s;
     transition: all 0.4s ease-in-out 0.5s;
-	
+
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
     filter: alpha(opacity=99);
 	opacity: 1;
-	
+
 	top: 50%;
 }
 
@@ -131,52 +131,52 @@
 }
 
 @media screen and (max-width: 720px) {
-    .ia-container { 
-		width: 540px; 
+    .ia-container {
+		width: 540px;
 	}
-	
-	.ia-container figure { 
-		left: 40px; 
-		width: 260px; 
+
+	.ia-container figure {
+		left: 40px;
+		width: 260px;
 	}
-	
-	.ia-container input { 
-		width: 40px; 
+
+	.ia-container input {
+		width: 40px;
 	}
-	
-	.ia-container input:checked ~ figure { 
-		left: 260px; 
+
+	.ia-container input:checked ~ figure {
+		left: 260px;
 	}
-	
-	.ia-container figcaption span { 
-		font-size: 16px; 
+
+	.ia-container figcaption span {
+		font-size: 16px;
 	}
 }
 
 @media screen and (max-width: 520px) {
-    .ia-container { 
-		width: 320px; 
+    .ia-container {
+		width: 320px;
 	}
-	
-	.ia-container figure { 
-		left: 20px; 
-		width: 180px; 
+
+	.ia-container figure {
+		left: 20px;
+		width: 180px;
 	}
-	
-	.ia-container input { 
-		width: 20px; 
+
+	.ia-container input {
+		width: 20px;
 	}
-	
-	.ia-container input:checked ~ figure { 
-		left: 180px; 
+
+	.ia-container input:checked ~ figure {
+		left: 180px;
 	}
-	
-	.ia-container figcaption span { 
-		font-size: 12px; 
-		letter-spacing: 2px; 
-		padding: 10px; 
-		margin-top: -20px; 
-	} 
+
+	.ia-container figcaption span {
+		font-size: 12px;
+		letter-spacing: 2px;
+		padding: 10px;
+		margin-top: -20px;
+	}
 
 }
 .formul
@@ -185,8 +185,8 @@
 }
 .prueba{
 	text-align: center;
-	
-	
+
+
 	width: 200px;
 	border: 1px solid black;
 	border-radius: 15px 15px 15px 15px;
@@ -196,7 +196,7 @@
 	box-shadow: 1px 1px 0px 0px rgb(0, 0, 0);
 	transition: background-color 1s;
 	margin: 7px;
-	
+
 	width: 100%;
 	background-color: #3897f0;
 	border: 1px solid black;
@@ -214,4 +214,17 @@
 	position: relative;
 	top: 0px;
 	left: 0px;
+}
+.alert {
+	box-sizing: border-box;
+	width: 100%;
+	position: relative;
+	z-index: 300;
+	padding: 20px 40px;
+	color: #ffffff;
+	max-width: 600px;
+	margin: auto;
+	border-radius: 4px;
+	background-color: rgba(19, 35, 47, 0.9);
+	text-align: center;
 }

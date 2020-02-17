@@ -10,19 +10,16 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Photogram</title>
+  <title>Olivo_Gonzalez</title>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!--Imagen para el icono-->
+  <link rel="icon" type="image/png" href="/recursos/images/cerebro.png" />
+
   <!--Css Formulario-->
-
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="recursos/css/style_formulario.css">
 
   <!--Css para la imagenes-->
-
   <link rel="stylesheet" type="text/css" href="recursos/css/demo.css" />
         <link rel="stylesheet" type="text/css" href="recursos/css/style.css" />
         <link rel="stylesheet" type="text/css" href="recursos/css/normalize.css" />
@@ -30,15 +27,10 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 </head>
 
 <body>
-
   <div id="wrapper">
-
     <div class="w-center" >
-
     <section class="main">
-
       <div class="ia-container">
-
         <figure>
           <img src="recursos/images/1.jpg" alt="image01" />
           <input type="radio" name="radio-set" checked="checked"/>
@@ -55,7 +47,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
               <figcaption><span>Silent Serenity</span></figcaption>
 
               <figure>
-                <img src="recurso/images/4.jpg" alt="image04" />
+                <img src="recursos/images/4.jpg" alt="image04" />
                 <input type="radio" name="radio-set" />
                 <figcaption><span>Warm Welcome</span></figcaption>
 
@@ -79,25 +71,15 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
                         <input id="ia-selector-last" type="radio" name="radio-set" />
                         <figcaption><span>Happy Child</span></figcaption>
                       </figure>
-
                     </figure>
-
                   </figure>
-
                 </figure>
-
               </figure>
-
             </figure>
-
           </figure>
-
         </figure>
-
       </div><!-- cierra el div que contiene todos los figure -->
-
     </section>
-
     </div>
 
     <div class="w-center">
@@ -124,7 +106,19 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
       $numeroemail = $resultadoemail->num_rows;
 
       if($numeroemail>0) {
-        echo "Este correo ya esta registrado, intenta con otro";
+        echo "<div class='alert'>";
+        echo "<p>Este correo ya esta registrado, intenta con otro</p>";
+        echo "</div>";
+
+
+
+
+
+
+
+
+
+
       }
 
       elseif($numerousuario>0) {
@@ -140,13 +134,12 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
         if($registro = $mysqli->query($query)) {
 
           Header("Refresh: 2; URL=index.php");
+          echo "<div>";
+          echo "<div class='alert'>";
+          echo "<p>Felicidades $usuario se ha registrado correctamente.</p>";
+          echo "</div>";
+          echo "</div>";
 
-          echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">Felicidades
-          <strong>"$usurio"</strong>se ha registrado correctamente.
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>';
 
 
 
@@ -167,12 +160,9 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 
     }
     ?>
-<div class="container">
 
   <?php
-//-----------------------------
-//PHP para el inicio de sesion
-//----------------------------
+
       if(isset($_GET['error'])) {
         echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <strong>"Error el usuario o contraseña no coinciden"</strong>
@@ -182,8 +172,11 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
               </div>';
       }
       ?>
-</div>
+
       <?php
+//-----------------------------
+//PHP para el inicio de sesion
+//----------------------------
       if(isset($_POST['entrar'])) {
 
         require("conexion.php");
@@ -269,7 +262,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
             <input type="password" name="password" required />
           </div>
 
-          <button type="submit" name="registro" class="button button-block"/>Registrame</button>
+          <button type="submit" name="registro" id="prueba" class="button button-block"/>Registrame</button>
 
           </form>
 
