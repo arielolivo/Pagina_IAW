@@ -14,11 +14,7 @@ body {
 a {
   text-decoration: none;
   color: #1ab188;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-}
-a:hover {
-  color: #179b77;
+  text-align:center ;
 }
 
 .form {
@@ -175,11 +171,4 @@ textarea {
 .forgot {
   margin-top: -20px;
   text-align: right;
-}
-.alerta {
-  padding: auto;
-  max-width: 600px;
-  margin: auto;
-  border-radius: 4px;
-  text-align: center;
 }

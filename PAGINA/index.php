@@ -110,15 +110,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
         echo "<p>Este correo ya esta registrado, intenta con otro</p>";
         echo "</div>";
 
-
-
-
-
-
-
-
-
-
       }
 
       elseif($numerousuario>0) {
@@ -139,20 +130,18 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
           echo "<p>Felicidades $usuario se ha registrado correctamente.</p>";
           echo "</div>";
           echo "</div>";
-
-
-
-
-
         }
 
         else {
 
-          echo "Ha ocurrido un error en el registro, intentelo de nuevo";
-          header("Refresh: 2; URL=registro.php?error=registro");
+          echo "<div>";
+          echo "<div class='alert'>";
+          echo "<p>Ha ocurrido un error en el registro, intentelo de nuevo</p>";
+          echo "</div>";
+          echo "</div>";
+          header("Refresh: 2; URL=index.php?error=registro");
 
         }
-
 
       }
 
@@ -164,12 +153,12 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
   <?php
 
       if(isset($_GET['error'])) {
-        echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>"Error el usuario o contraseña no coinciden"</strong>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">x</span>
-                </button>
-              </div>';
+        echo "<div>";
+        echo "<div class='alert'>";
+        echo "<p>Error el usuario o contraseña no coinciden.</p>";
+        echo "</div>";
+        echo "</div>";
+
       }
       ?>
 
@@ -217,7 +206,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
           }
 
         }
-
 
       }
       ?>
@@ -287,8 +275,9 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
             </label>
             <input type="password" class="input" name="password" />
           </div>
-          <input type="submit" class="button button-block" value="Entrar" class="btn" name="entrar" />
-
+          <input type="submit" class="button button-block" value="Entrar"  name="entrar" />
+          <br>
+          <a type="submit" class="button button-block" value="Entrar"  name="anonimo" href="galeria.php">Entrar Como Invitado</a>
           </form> <!-- cierra el formulario -->
 
         </div>
