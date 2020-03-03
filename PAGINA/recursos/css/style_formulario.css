@@ -1,14 +1,15 @@
-*, *:before, *:after {
-  box-sizing: border-box;
-}
 
 html {
   overflow-y: scroll;
 }
 
 body {
-  background: #c1bdba;
-  font-family: 'Titillium Web', sans-serif;
+    font-family: 'Open Sans Condensed','Arial Narrow', serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #333;
+    background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
+
 }
 
 a {
@@ -171,4 +172,7 @@ textarea {
 .forgot {
   margin-top: -20px;
   text-align: right;
+}
+.tabla{
+  color: #ffffff;
 }
